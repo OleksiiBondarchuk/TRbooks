@@ -32,6 +32,6 @@ namespace TRbooks.Models
         [Display(Name ="Number in stock")]
         public int NumberInStock { get; set; }
 
-        
+        public int NumberAvailable { get; set; }
     }
 }

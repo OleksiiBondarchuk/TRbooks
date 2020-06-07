@@ -59,7 +59,7 @@ namespace TRbooks.Models
     public class RegisterViewModel
     {
         [Required]
-        [Display(Name = "Your mobile phone nimber")]
+        [Display(Name = "Your mobile phone number")]
         public string Phone { get; set; }
 
         [Required]

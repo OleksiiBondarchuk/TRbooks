@@ -1,8 +1,31 @@
-﻿
+﻿@model TRbooks.Models.Rental
 @{
     ViewBag.Title = "New Rental";
-    Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h2>New</h2>
-
+@using (Html.BeginForm("CreateRentals", "Rentals"))
+{
+    <div id="form">
+        <h2>@ViewBag.Title</h2>
+        <table>
+            <tr>
+                <td width="200">@Html.LabelFor(m => m.CustomerD)</td>
+                <td>
+                    @Html.TextBoxFor(m => m.CustomerD)<br />
+                    @Html.ValidationMessageFor(m => m.CustomerD)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.BookD)</td>
+                <td>
+                    @Html.TextBoxFor(m => m.BookD)<br />
+                    @Html.ValidationMessageFor(m => m.BookD)
+                </td>
+            </tr>
+        </table>
+        <div>
+            @Html.HiddenFor(m => m.DateRented)
+            @Html.HiddenFor(m => m.Id)
+            <button type="submit" id="butOK" style="margin-top:15px">Create new rental</button>
+        </div>
+    </div>
+}

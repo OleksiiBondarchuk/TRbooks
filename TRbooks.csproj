@@ -185,7 +185,6 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\Api\CustomersController.cs" />
     <Compile Include="Controllers\Api\BooksController.cs" />
-    <Compile Include="Controllers\Api\NewRentalsController.cs" />
     <Compile Include="Controllers\CustomersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -195,7 +194,6 @@
     <Compile Include="Dtos\MembershipTypeDto.cs" />
     <Compile Include="Dtos\BookDto.cs" />
     <Compile Include="Dtos\BookGenreDto.cs" />
-    <Compile Include="Dtos\NewRentalDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -266,6 +264,26 @@
     <Compile Include="Migrations\202006071358457_NewNumberAvailablePropInBook.cs" />
     <Compile Include="Migrations\202006071358457_NewNumberAvailablePropInBook.designer.cs">
       <DependentUpon>202006071358457_NewNumberAvailablePropInBook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006071553486_ChangeRentalsModel.cs" />
+    <Compile Include="Migrations\202006071553486_ChangeRentalsModel.designer.cs">
+      <DependentUpon>202006071553486_ChangeRentalsModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006071557202_ChangeRentalsModel2.cs" />
+    <Compile Include="Migrations\202006071557202_ChangeRentalsModel2.designer.cs">
+      <DependentUpon>202006071557202_ChangeRentalsModel2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006071605355_ChangeRentalsModel3.cs" />
+    <Compile Include="Migrations\202006071605355_ChangeRentalsModel3.designer.cs">
+      <DependentUpon>202006071605355_ChangeRentalsModel3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006071651120_ChangeRentalsModel4.cs" />
+    <Compile Include="Migrations\202006071651120_ChangeRentalsModel4.designer.cs">
+      <DependentUpon>202006071651120_ChangeRentalsModel4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006071702206_ChangeRentalsModel5.cs" />
+    <Compile Include="Migrations\202006071702206_ChangeRentalsModel5.designer.cs">
+      <DependentUpon>202006071702206_ChangeRentalsModel5.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -519,6 +537,7 @@
     <Content Include="Views\Books\BookForm.cshtml" />
     <Content Include="Views\Books\ReadOnlyList.cshtml" />
     <Content Include="Views\Rentals\New.cshtml" />
+    <Content Include="Views\Rentals\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -583,6 +602,21 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006071358457_NewNumberAvailablePropInBook.resx">
       <DependentUpon>202006071358457_NewNumberAvailablePropInBook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006071553486_ChangeRentalsModel.resx">
+      <DependentUpon>202006071553486_ChangeRentalsModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006071557202_ChangeRentalsModel2.resx">
+      <DependentUpon>202006071557202_ChangeRentalsModel2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006071605355_ChangeRentalsModel3.resx">
+      <DependentUpon>202006071605355_ChangeRentalsModel3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006071651120_ChangeRentalsModel4.resx">
+      <DependentUpon>202006071651120_ChangeRentalsModel4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006071702206_ChangeRentalsModel5.resx">
+      <DependentUpon>202006071702206_ChangeRentalsModel5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

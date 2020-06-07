@@ -40,23 +40,21 @@ namespace TRbooks.Controllers
             {
                 var viewModel = new Rental
                 {
-                    CustomerD = rental.CustomerD,
-                    BookD = rental.BookD
+                    Customer = rental.Customer,
+                    Book = rental.Book
                 };
                 return View("New", viewModel);
             }
             if (rental.Id == 0)
             {
                 var customer = context.Customers.Single
-               (c => c.Id == rental.CustomerD);
+               (c => c == rental.Customer);
 
                 var book = context.Books.Single
-                    (b => b.Id == rental.BookD);
+                    (b => b == rental.Book);
 
                 var newRental = new Rental
                 {
-                    CustomerD = customer.Id,
-                    BookD = book.Id,
                     Customer = customer,
                     Book = book,
                     DateRented = DateTime.Now

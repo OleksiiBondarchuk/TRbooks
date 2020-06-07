@@ -265,26 +265,6 @@
     <Compile Include="Migrations\202006071358457_NewNumberAvailablePropInBook.designer.cs">
       <DependentUpon>202006071358457_NewNumberAvailablePropInBook.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202006071553486_ChangeRentalsModel.cs" />
-    <Compile Include="Migrations\202006071553486_ChangeRentalsModel.designer.cs">
-      <DependentUpon>202006071553486_ChangeRentalsModel.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202006071557202_ChangeRentalsModel2.cs" />
-    <Compile Include="Migrations\202006071557202_ChangeRentalsModel2.designer.cs">
-      <DependentUpon>202006071557202_ChangeRentalsModel2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202006071605355_ChangeRentalsModel3.cs" />
-    <Compile Include="Migrations\202006071605355_ChangeRentalsModel3.designer.cs">
-      <DependentUpon>202006071605355_ChangeRentalsModel3.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202006071651120_ChangeRentalsModel4.cs" />
-    <Compile Include="Migrations\202006071651120_ChangeRentalsModel4.designer.cs">
-      <DependentUpon>202006071651120_ChangeRentalsModel4.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\202006071702206_ChangeRentalsModel5.cs" />
-    <Compile Include="Migrations\202006071702206_ChangeRentalsModel5.designer.cs">
-      <DependentUpon>202006071702206_ChangeRentalsModel5.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\ApplicationUser.cs" />
@@ -602,21 +582,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006071358457_NewNumberAvailablePropInBook.resx">
       <DependentUpon>202006071358457_NewNumberAvailablePropInBook.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202006071553486_ChangeRentalsModel.resx">
-      <DependentUpon>202006071553486_ChangeRentalsModel.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202006071557202_ChangeRentalsModel2.resx">
-      <DependentUpon>202006071557202_ChangeRentalsModel2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202006071605355_ChangeRentalsModel3.resx">
-      <DependentUpon>202006071605355_ChangeRentalsModel3.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202006071651120_ChangeRentalsModel4.resx">
-      <DependentUpon>202006071651120_ChangeRentalsModel4.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\202006071702206_ChangeRentalsModel5.resx">
-      <DependentUpon>202006071702206_ChangeRentalsModel5.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -40,6 +40,7 @@ namespace TRbooks.Controllers.Api
         }
 
         //Post /api/books
+        [Authorize(Roles = RoleName.CanManageBooks)]
         [HttpPost]
         public IHttpActionResult CreateBook(BookDto bookDto)
         {
@@ -57,6 +58,7 @@ namespace TRbooks.Controllers.Api
         }
 
         //Put /api/books/1
+        [Authorize(Roles = RoleName.CanManageBooks)]
         [HttpPut]
         public IHttpActionResult UpdateBook(int id, BookDto bookDto)
         {
@@ -74,6 +76,7 @@ namespace TRbooks.Controllers.Api
             return Ok();
         }
         //DELETE /api/books/1
+        [Authorize(Roles = RoleName.CanManageBooks)]
         [HttpDelete]
         public IHttpActionResult RemoveBook(int id)
         {

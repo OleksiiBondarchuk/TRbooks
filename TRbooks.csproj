@@ -248,6 +248,10 @@
     <Compile Include="Migrations\202006031915107_SeedUsers.designer.cs">
       <DependentUpon>202006031915107_SeedUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006071021093_AddApplicationUserStudentTicket.cs" />
+    <Compile Include="Migrations\202006071021093_AddApplicationUserStudentTicket.designer.cs">
+      <DependentUpon>202006071021093_AddApplicationUserStudentTicket.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -257,6 +261,7 @@
     <Compile Include="Models\Min18IfAMember.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Models\BookGenre.cs" />
+    <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\CustomerFormViewModel.cs" />
@@ -547,6 +552,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202006031915107_SeedUsers.resx">
       <DependentUpon>202006031915107_SeedUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006071021093_AddApplicationUserStudentTicket.resx">
+      <DependentUpon>202006071021093_AddApplicationUserStudentTicket.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

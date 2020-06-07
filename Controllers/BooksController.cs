@@ -11,7 +11,7 @@ using TRbooks.ViewModels;
 
 namespace TRbooks.Controllers
 {
-    
+    [Authorize]
     public class BooksController : Controller
     {
         ApplicationDbContext context;
@@ -26,7 +26,7 @@ namespace TRbooks.Controllers
         public ActionResult Index()
         {
             var books = context.Books.Include(c => c.BookGenre).ToList();
-            if (User.IsInRole("CanManageBooks"))
+            if (User.IsInRole(RoleName.CanManageBooks))
             {
                 return View("List",books);
             }
@@ -43,6 +43,7 @@ namespace TRbooks.Controllers
             return View(book);
         }
 
+        [Authorize(Roles = RoleName.CanManageBooks)]
         public ActionResult New()
         {
             var BookGenres = context.BookGenres.ToList();

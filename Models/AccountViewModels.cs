@@ -3,18 +3,6 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TRbooks.Models
 {
-    public class ExternalLoginConfirmationViewModel
-    {
-        [Required]
-        [Display(Name = "Email")]
-        public string Email { get; set; }
-
-
-        [Required]
-        [StringLength(15)]
-        public string Phone { get; set; }
-
-    }
 
     public class ExternalLoginListViewModel
     {

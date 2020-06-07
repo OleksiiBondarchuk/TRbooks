@@ -34,6 +34,8 @@ namespace TRbooks.Controllers
 
 
         }
+
+        [Authorize(Roles = RoleName.CanManageBooks)]
         public ActionResult Details(int id)
         {
             var book = context.Books.Include(c => c.BookGenre).SingleOrDefault(c => c.Id == id);
@@ -59,6 +61,7 @@ namespace TRbooks.Controllers
             return View("BookForm", viewModel);
         }
 
+        [Authorize(Roles = RoleName.CanManageBooks)]
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Save(Book book)
@@ -87,6 +90,8 @@ namespace TRbooks.Controllers
             context.SaveChanges();
             return RedirectToAction("Index", "Books");
         }
+
+        [Authorize(Roles = RoleName.CanManageBooks)]
         public ActionResult Edit(int id)
         {
             var book = context.Books.SingleOrDefault(c => id == c.Id);

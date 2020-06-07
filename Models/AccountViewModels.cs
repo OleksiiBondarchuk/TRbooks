@@ -65,6 +65,10 @@ namespace TRbooks.Models
     public class RegisterViewModel
     {
         [Required]
+        [Display(Name = "Your student ticket")]
+        public string StudentTicket { get; set; }
+
+        [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }

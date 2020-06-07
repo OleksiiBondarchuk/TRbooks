@@ -156,7 +156,9 @@ namespace TRbooks.Controllers
                 {
                     UserName = model.Email,
                     Email = model.Email,
-                    StudentTicket = model.StudentTicket
+                    StudentTicket = model.StudentTicket,
+                    Phone = model.Phone
+
                 };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)

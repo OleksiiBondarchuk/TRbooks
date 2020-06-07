@@ -8,6 +8,12 @@ namespace TRbooks.Models
         [Required]
         [Display(Name = "Email")]
         public string Email { get; set; }
+
+
+        [Required]
+        [StringLength(15)]
+        public string Phone { get; set; }
+
     }
 
     public class ExternalLoginListViewModel
@@ -64,6 +70,10 @@ namespace TRbooks.Models
 
     public class RegisterViewModel
     {
+        [Required]
+        [Display(Name = "Your mobile phone nimber")]
+        public string Phone { get; set; }
+
         [Required]
         [Display(Name = "Your student ticket")]
         public string StudentTicket { get; set; }

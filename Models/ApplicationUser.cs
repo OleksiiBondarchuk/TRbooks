@@ -12,6 +12,11 @@ namespace TRbooks.Models
         [Required]
         [StringLength(255)]
         public string StudentTicket { get; set; }
+
+        [Required]
+        [StringLength(15)]
+        public string Phone { get; set; }
+
         public async Task<ClaimsIdentity> GenerateUserIdentityAsync(UserManager<ApplicationUser> manager)
         {
             // Note the authenticationType must match the one defined in CookieAuthenticationOptions.AuthenticationType

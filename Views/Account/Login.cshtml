@@ -1,7 +1,7 @@
 ﻿@using TRbooks.Models
 @model LoginViewModel
 @{
-    ViewBag.Title = "Log in";
+    ViewBag.Title = "Log in to continue";
 }
 
 <h2>@ViewBag.Title.</h2>
@@ -45,11 +45,6 @@
                     @Html.ActionLink("Register as a new user", "Register")
                 </p>
             }
-        </section>
-    </div>
-    <div class="col-md-4">
-        <section id="socialLoginForm">
-            @Html.Partial("_ExternalLoginsListPartial", new ExternalLoginListViewModel { ReturnUrl = ViewBag.ReturnUrl })
         </section>
     </div>
 </div>

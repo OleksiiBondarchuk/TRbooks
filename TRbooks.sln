@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TRbooks", "TRbooks.csproj", "{F0BD947F-ACC8-4807-8114-E852C8B11036}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TRbooks.Tests", "..\TRbooks.Tests\TRbooks.Tests.csproj", "{597BA238-3F1B-4ABF-BCDC-E5C6F8560807}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TRbooks.test", "..\TRbooks.test\TRbooks.test.csproj", "{C60B1C85-1334-42B6-94F4-557E16041F10}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{F0BD947F-ACC8-4807-8114-E852C8B11036}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0BD947F-ACC8-4807-8114-E852C8B11036}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0BD947F-ACC8-4807-8114-E852C8B11036}.Release|Any CPU.Build.0 = Release|Any CPU
-		{597BA238-3F1B-4ABF-BCDC-E5C6F8560807}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{597BA238-3F1B-4ABF-BCDC-E5C6F8560807}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{597BA238-3F1B-4ABF-BCDC-E5C6F8560807}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{597BA238-3F1B-4ABF-BCDC-E5C6F8560807}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C60B1C85-1334-42B6-94F4-557E16041F10}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C60B1C85-1334-42B6-94F4-557E16041F10}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C60B1C85-1334-42B6-94F4-557E16041F10}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C60B1C85-1334-42B6-94F4-557E16041F10}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

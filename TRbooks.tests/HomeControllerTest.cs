@@ -1,8 +1,14 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Web.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using TRbooks;
 using TRbooks.Controllers;
-
+using System.Web;
+using TRbooks.Models;
+using TRbooks.ViewModels;
 
 
 namespace TRbooks.tests

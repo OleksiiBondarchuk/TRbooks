@@ -16,48 +16,22 @@
         <div id="menu">
             <h2>Навігація по сайту</h2>
             <ul>
-                <li><a href="#">Елемент списку</a></li>
-                <li><a href="#">Елемент списку</a></li>
-                <li><a href="#">Елемент списку</a></li>
-
-                <li><a href="#">Елемент списку</a></li>
-                <li><a href="#">Елемент списку</a></li>
-
-                <li><a href="#">Елемент списку</a></li>
+                <li><a href="#">Новинки</a></li>
+                <div class="line"></div>
+                <li><a href="#">Гарячі пропозиції</a></li>
+                <div class="line"></div>
+                <li><a href="#">Популярне</a></li>
+                <div class="line"></div>
+                <li><a href="#">Q&A від розробників</a></li>
+                <div class="line"></div>
+                <li><a href="#">Цікавий елемент списку</a></li>
                 <div class="line"></div>
                 <li><a href="#">Елемент списку</a></li>
-                <div class="line"></div>
-                <li><a href="#">Елемент списку</a></li>
-                <div class="line"></div>
-                <li><a href="#">Елемент списку</a></li>
-                <li><a href="#">Елемент списку</a></li>
-                <li><a href="#">Елемент списку</a></li>
-
             </ul>
         </div>
-
-        <div id="registr">
-            <div id="renderBody">
-                @RenderBody()
-            </div>
-            @*<form id="form">
-                <table>
-                    <tr>
-                        <td width="130"><label for="login">Ваш логін:</label></td>
-                        <td><input type="text" id="login" name="login" placeholder="Введіть логін" required /></td>
-                    <tr>
-                    <tr>
-                        <td><label for="password">Ваш пароль:</label></td>
-                        <td><input type="password" id="password" name="password" placeholder="Введіть пароль" required /></td>
-                    <tr>
-                </table>
-                <div>
-                    <button id="butOK" type="submit" disabled=true>Увійти</button>
-                </div>
-                <p><a id="forgive" href="#">Забули пароль?</a></p>
-            </form>*@
+        <div id="renderBody">
+            @RenderBody()
         </div>
-
         <article id="main">
             <div id="text">
                 <p>
@@ -81,6 +55,6 @@
         <p>Copyright © MySyte.com, 2042</p>
     </div>
     @Scripts.Render("~/bundles/lib")
-    @RenderSection("scripts",required:false)
+    @RenderSection("scripts", required: false)
 </body>
 </html>

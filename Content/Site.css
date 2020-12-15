@@ -32,9 +32,11 @@ body {
 .dataTables_info, .pagination {
     font-size: 75%;
 }
+
 .dataTables_info {
     text-align: left;
 }
+
 .pagination {
     text-align: left;
     margin-top: 5px;
@@ -52,10 +54,12 @@ body {
         text-decoration: none;
         border: 1px solid #66CC00;
     }
-.pagination a:hover {
-    color: white;
-    background-color: #66CC00;
-}
+
+        .pagination a:hover {
+            color: white;
+            background-color: #66CC00;
+        }
+
 #nav {
     background-color: #eee;
     border-bottom: 2px solid #66CC00;
@@ -64,40 +68,44 @@ body {
     left: 0;
     right: 0;
 }
+
     #nav ul {
         text-align: center;
     }
+
 .hidenForm {
     display: inline;
     width: 60px !important;
 }
+
 .important {
-    background:#CCFF66;
+    background: #CCFF66;
 }
+
 #nav li {
     display: inline;
     list-style: none;
 }
 
-    #nav a {
-        display: inline-block;
-        color: black;
-        padding: 25px 25px 25px;
-        text-decoration: none;
-        border-right: 2px solid #66CC00;
-        border-left: 2px solid #66CC00;
+#nav a {
+    display: inline-block;
+    color: black;
+    padding: 25px 25px 25px;
+    text-decoration: none;
+    border-right: 2px solid #66CC00;
+    border-left: 2px solid #66CC00;
+}
+
+    #nav a:hover {
+        color: white;
+        background-color: black;
     }
 
-        #nav a:hover {
-            color: white;
-            background-color: black;
-        }
-
-    #nav:after {
-        content: " ";
-        display: table;
-        clear: both;
-    }
+#nav:after {
+    content: " ";
+    display: table;
+    clear: both;
+}
 
 .wrapper {
     background-color: #eee;
@@ -124,6 +132,8 @@ body {
 }
 
     #menu li {
+        display: flex;
+        flex-direction: column;
         list-style: none;
         margin: 10px;
         text-align: center;
@@ -139,17 +149,15 @@ body {
             color: white;
             border-radius: 10px;
             background-color: #66CC00;
-            padding-left: 60px;
-            padding-right: 60px;
         }
-/*лінії то товсті то тонкі через одну */
+
 .line {
     border-bottom: 2px solid #66CC00;
     width: 170px;
     margin: auto;
 }
 
-#registr  {
+#registr {
     margin: 20px;
     padding: 10px;
     margin-right: 343px;
@@ -157,6 +165,7 @@ body {
     border-radius: 10px;
     background-color: #CCFF66;
 }
+
 #renderBody {
     margin: 20px;
     padding: 10px;
@@ -164,12 +173,14 @@ body {
     border-radius: 10px;
     background-color: #CCFF66;
 }
+
     #renderBody h2 {
         font-size: 18px;
         text-align: center;
         margin-bottom: 10px;
         margin-top: 10px;
     }
+
 #registr h1 {
     font-size: 18px;
     text-align: center;
@@ -193,12 +204,14 @@ body {
         margin: 5px;
         padding: 5px;
         border: 2px solid #66CC00;
-        border-radius:10px;
+        border-radius: 10px;
     }
+
         #form input:focus {
             outline: none;
-            border-color:black;
+            border-color: black;
         }
+
     #form select {
         margin: 5px;
         padding: 5px;
@@ -206,27 +219,25 @@ body {
         border-radius: 10px;
         outline: none;
     }
+
     #form label {
         padding: 5px;
     }
 
-        #form label:hover {
-            border: 2px solid #66CC00;
-            border-radius: 15px;
-            color: white;
-            background-color: #66CC00;
-        }
 
-  #renderBody input {
-        margin: 5px;
-        padding: 5px;
-        border: 2px solid #66CC00;
-        border-radius:10px;
-    }
+
+#renderBody input {
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid #66CC00;
+    border-radius: 10px;
+}
+
     #renderBody input:focus {
         outline: none;
         border-color: black;
     }
+
 #renderBody select {
     margin: 5px;
     padding: 5px;
@@ -234,13 +245,13 @@ body {
     border-radius: 10px;
     outline: none;
 }
+
 #renderBody label {
-    padding: 5px;
+    padding: 2px;
 }
 
     #renderBody label:hover {
-        border: 2px solid #66CC00;
-        border-radius: 15px;
+        border-radius: 5px;
         color: white;
         background-color: #66CC00;
     }
@@ -253,22 +264,24 @@ body {
     border-collapse: collapse;
     text-align: center;
 }
+
     .dataTable td, th {
         padding: 5px;
         border: 1px solid #66CC00;
     }
+
     .dataTable th {
         border: 3px solid #66CC00;
-        width:120px;
-    }
-    #butOK {
-        margin-top: 10px;
         width: 120px;
-        height: 40px;
-        font-weight: bold;
-        border: 2px solid #66CC00;
-        
     }
+
+#butOK {
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    font-weight: bold;
+    border: 2px solid #66CC00;
+}
 
 #butDELETE {
     margin: 5px;
@@ -276,10 +289,12 @@ body {
     height: 25px;
     border: 2px solid #66CC00;
 }
+
 #butOK a {
-    text-decoration:none;
-    color:black;
+    text-decoration: none;
+    color: black;
 }
+
 #butOK:hover, #butDELETE:hover {
     color: white;
     background-color: #66CC00;
@@ -299,24 +314,29 @@ body {
 .wrongValid {
     margin: 10px !important;
 }
+
 .field-validation-error {
-    color:red;
-    font-size:75%;
+    color: red;
+    font-size: 75%;
 }
+
 .validation-summary-errors {
-    margin:10px;
+    margin: 10px;
     border: 1px solid red;
     border-radius: 10px;
     width: 400px;
     padding: 5px;
 }
+
     .validation-summary-errors li {
         list-style: none;
         font-size: 90%;
     }
+
 .input-validation-error {
     border: 2px solid red !important;
 }
+
 #text p {
     margin-right: 100px;
     padding: 10px 30px 10px 30px;
@@ -337,7 +357,7 @@ body {
 .wrapper, #nav, #header, #footer {
     min-width: 968px;
 }
-#renderBody {
-    min-width:500px;
 
+#renderBody {
+    min-width: 500px;
 }

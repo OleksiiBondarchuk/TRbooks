@@ -176,6 +176,7 @@ body {
 
 #renderBody {
     margin: 20px;
+    margin-right: 350px;
     padding: 10px;
     border: 2px solid #66CC00;
     border-radius: 10px;
@@ -267,6 +268,7 @@ body {
 
 
 .dataTable {
+    min-width: 600px;
     margin: 10px 10px 15px 0px;
     border: 3px solid #66CC00;
     border-collapse: collapse;

@@ -19,7 +19,7 @@
             <tr>
                 <td>@Html.LabelFor(m => m.ReleaseDate)</td>
                 <td>
-                    @Html.TextBoxFor(m => m.ReleaseDate,"{0:d MMM yyyy}")<br />
+                    @Html.TextBoxFor(m => m.ReleaseDate, "{0:d MMMM yyyy}")<br />
                     @Html.ValidationMessageFor(m => m.ReleaseDate)
                 </td>
             </tr>
@@ -40,7 +40,7 @@
         </table>
         <div>
             @Html.HiddenFor(m => m.Id)
-            @Html.HiddenFor(m => m.AddedDate) 
+            @Html.HiddenFor(m => m.AddedDate)
             @Html.AntiForgeryToken()
             <button type="submit" id="butOK" style="margin-top:15px">Save</button>
         </div>
@@ -49,4 +49,4 @@
 @section scripts
     {
     @Scripts.Render("~/bundles/jqueryval")
-} 
+}

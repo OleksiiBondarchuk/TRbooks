@@ -13,7 +13,7 @@ namespace TRbooks.Controllers.Api
 {
     public class BooksController : ApiController
     {
-        private ApplicationDbContext context;
+        ApplicationDbContext context;
         public BooksController()
         {
             context = new ApplicationDbContext();

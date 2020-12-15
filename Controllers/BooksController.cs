@@ -1,21 +1,20 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity.Core.Metadata.Edm;
-using System.Data.Entity.Infrastructure.MappingViews;
 using System.Linq;
-using System.Web;
 using System.Data.Entity;
 using System.Web.Mvc;
 using TRbooks.Models;
 using TRbooks.ViewModels;
 
+
 namespace TRbooks.Controllers
 {
+
     [Authorize]
     public class BooksController : Controller
     {
-        ApplicationDbContext context;
-        public BooksController() 
+        public ApplicationDbContext context;
+        public BooksController()
         {
             context = new ApplicationDbContext();
         }
@@ -28,12 +27,14 @@ namespace TRbooks.Controllers
             var books = context.Books.Include(c => c.BookGenre).ToList();
             if (User.IsInRole(RoleName.CanManageBooks))
             {
-                return View("List",books);
+                return View("List", books);
             }
             return View("ReadOnlyList", books);
 
 
         }
+
+
 
         [Authorize(Roles = RoleName.CanManageBooks)]
         public ActionResult Details(int id)
@@ -57,7 +58,7 @@ namespace TRbooks.Controllers
             // very bad practice
             viewModel.AddedDate = DateTime.Today;
             // very bad practice
-            
+
             return View("BookForm", viewModel);
         }
 
@@ -66,13 +67,13 @@ namespace TRbooks.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Save(Book book)
         {
-            if (!ModelState.IsValid) 
+            if (!ModelState.IsValid)
             {
                 var viewModel = new BookFormViewModel(book)
                 {
                     BookGenres = context.BookGenres.ToList()
                 };
-                return View("BookForm",viewModel);
+                return View("BookForm", viewModel);
             }
 
             if (book.Id == 0)
@@ -105,6 +106,6 @@ namespace TRbooks.Controllers
             return View("BookForm", viewModel);
         }
 
-    
+
     }
-} 
+}

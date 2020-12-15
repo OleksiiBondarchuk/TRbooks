@@ -8,17 +8,17 @@
         <h2>@ViewBag.Title</h2>
         <table>
             <tr>
-                <td width="200">@Html.LabelFor(m => m.Customer)</td>
+                <td width="200">@Html.LabelFor(m => m.Customer.Name)</td>
                 <td>
-                    @Html.TextBoxFor(m => m.Customer)<br />
-                    @Html.ValidationMessageFor(m => m.Customer)
+                    @Html.TextBoxFor(m => m.Customer.Name)<br />
+                    @Html.ValidationMessageFor(m => m.Customer.Name)
                 </td>
             </tr>
             <tr>
-                <td>@Html.LabelFor(m => m.Book)</td>
+                <td>@Html.LabelFor(m => m.Book.Name)</td>
                 <td>
-                    @Html.TextBoxFor(m => m.Book)<br />
-                    @Html.ValidationMessageFor(m => m.Book)
+                    @Html.TextBoxFor(m => m.Book.Name)<br />
+                    @Html.ValidationMessageFor(m => m.Book.Name)
                 </td>
             </tr>
         </table>

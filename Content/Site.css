@@ -2,7 +2,15 @@
     box-sizing: border-box;
 }
 
+.btn {
+    min-width: 200px;
+    font-size: 14px;
+}
 
+    .btn:hover {
+        color: white;
+        background-color: #66CC00;
+    }
 
 html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, ul, li {
     margin: 0;

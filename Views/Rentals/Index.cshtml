@@ -16,10 +16,11 @@
         @foreach (var rental in Model)
         {
             <tr>
-                <td>@rental.Customer.Name</td>
-                <td>@rental.Book.Name</td>
+                <td>@rental.Id</td>
                 <td>@rental.DateRented</td>
-            </tr>            
+                <td>@rental.DateRented</td>
+            </tr>
+
         }
     </tbody>
 </table>

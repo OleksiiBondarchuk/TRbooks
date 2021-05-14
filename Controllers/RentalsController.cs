@@ -27,7 +27,7 @@ namespace TRbooks.Controllers
         [Authorize(Roles = RoleName.CanManageBooks)]
         public ActionResult New()
         {
-            var newRental = new Rental(); 
+            var newRental = new Rental();
             return View(newRental);
         }
 
@@ -36,7 +36,7 @@ namespace TRbooks.Controllers
         [HttpPost]
         public ActionResult CreateRentals(Rental rental)
         {
-            if (!ModelState.IsValid)
+            if (ModelState.IsValid)
             {
                 var viewModel = new Rental
                 {
@@ -48,10 +48,10 @@ namespace TRbooks.Controllers
             if (rental.Id == 0)
             {
                 var customer = context.Customers.Single
-               (c => c == rental.Customer);
+               (c => c.Name == rental.Customer.Name);
 
                 var book = context.Books.Single
-                    (b => b == rental.Book);
+                    (b => b.Name == rental.Book.Name);
 
                 var newRental = new Rental
                 {
@@ -62,7 +62,7 @@ namespace TRbooks.Controllers
 
                 context.Rentals.Add(newRental);
             }
-            
+
             context.SaveChanges();
 
             return RedirectToAction("Index", "Home");

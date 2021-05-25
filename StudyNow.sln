@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TRbooks", "TRbooks.csproj", "{F0BD947F-ACC8-4807-8114-E852C8B11036}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyNow", "StudyNow.csproj", "{F0BD947F-ACC8-4807-8114-E852C8B11036}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "domain", "domain", "{C55A15E5-A7D5-4E4D-AD55-0391E4CFB8E5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "..\Model\Model.csproj", "{F27CDE65-D1B0-4906-AA99-1A98464F207D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model.Tests", "..\Model.Tests\Model.Tests.csproj", "{B5895D9E-626C-48B4-873F-0B34C6931940}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Model.Tests", "..\Model.Tests\Model.Tests.csproj", "{B5895D9E-626C-48B4-873F-0B34C6931940}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

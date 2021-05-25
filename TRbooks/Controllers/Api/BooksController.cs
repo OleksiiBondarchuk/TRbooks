@@ -6,7 +6,6 @@ using System.Net.Http;
 using System.Data.Entity;
 using System.Web.Http;
 using TRbooks.Models;
-using TRbooks.Dtos;
 using AutoMapper;
 using Models;
 

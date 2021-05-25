@@ -197,10 +197,6 @@
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\BooksController.cs" />
     <Compile Include="Controllers\RentalsController.cs" />
-    <Compile Include="Dtos\CustomerDto.cs" />
-    <Compile Include="Dtos\MembershipTypeDto.cs" />
-    <Compile Include="Dtos\BookDto.cs" />
-    <Compile Include="Dtos\BookGenreDto.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

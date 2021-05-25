@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace TRbooks.Dtos
+namespace Models
 {
     public class MembershipTypeDto
     {

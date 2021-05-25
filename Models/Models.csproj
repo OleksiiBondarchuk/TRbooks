@@ -45,6 +45,10 @@
     <Compile Include="Book.cs" />
     <Compile Include="BookGenre.cs" />
     <Compile Include="Customer.cs" />
+    <Compile Include="Dtos\BookDto.cs" />
+    <Compile Include="Dtos\BookGenreDto.cs" />
+    <Compile Include="Dtos\CustomerDto.cs" />
+    <Compile Include="Dtos\MembershipTypeDto.cs" />
     <Compile Include="MembershipType.cs" />
     <Compile Include="Min18IfAMemberAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

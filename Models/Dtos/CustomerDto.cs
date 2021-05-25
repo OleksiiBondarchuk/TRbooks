@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using TRbooks.Models;
-using System.ComponentModel.DataAnnotations; 
+using System.ComponentModel.DataAnnotations;
 
-namespace TRbooks.Dtos
+namespace Models
 {
     public class CustomerDto
     {
@@ -17,10 +16,10 @@ namespace TRbooks.Dtos
         public bool IsSubscribedToNewsletter { get; set; }
 
         public MembershipTypeDto MembershipType { get; set; }
-   
+
         public byte MembershipTypeId { get; set; }
 
         //[Min18IfAMember]
-        public DateTime? Birthdate { get; set; } 
+        public DateTime? Birthdate { get; set; }
     }
 }

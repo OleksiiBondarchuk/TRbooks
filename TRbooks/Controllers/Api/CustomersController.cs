@@ -7,7 +7,6 @@ using System.Data.Entity;
 using System.Web.Http;
 using TRbooks.Models;
 using Models;
-using TRbooks.Dtos;
 using AutoMapper;
 
 namespace TRbooks.Controllers.Api

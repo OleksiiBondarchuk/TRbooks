@@ -19,7 +19,7 @@
             <tr>
                 <td>@Html.LabelFor(m => m.ReleaseDate)</td>
                 <td>
-                    @Html.TextBoxFor(m => m.ReleaseDate, "{0:d MMMM yyyy}")<br />
+                    @Html.TextBoxFor(m => m.ReleaseDate, "{0:dd/MM/yyyy}")<br />
                     @Html.ValidationMessageFor(m => m.ReleaseDate)
                 </td>
             </tr>

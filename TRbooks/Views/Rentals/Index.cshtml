@@ -1,0 +1,28 @@
+﻿@model IEnumerable<Models.Rental>
+
+@{
+    ViewBag.Title = "Rentals List";
+}
+<h2>Our Rentals</h2>
+<table class="dataTable">
+    <thead>
+        <tr>
+            <th>Customer Id</th>
+            <th>Book Id</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var rental in Model)
+        {
+            <tr>
+                <td>@rental.Id</td>
+                <td>@rental.DateRented</td>
+                <td>@rental.DateRented</td>
+            </tr>
+
+        }
+    </tbody>
+</table>
+<button id="butOK">@Html.ActionLink("New Rental", "New", "Rentals")</button>
+

@@ -1,0 +1,52 @@
+﻿@model TRbooks.ViewModels.BookFormViewModel
+@{
+    ViewBag.Title = "BookForm";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("Save", "Books"))
+{
+    <div id="form">
+        <h2>@Model.Title</h2>
+        <table>
+            <tr>
+                <td width="200">@Html.LabelFor(m => m.Name)</td>
+                <td>
+                    @Html.TextBoxFor(m => m.Name)<br />
+                    @Html.ValidationMessageFor(m => m.Name)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.ReleaseDate)</td>
+                <td>
+                    @Html.TextBoxFor(m => m.ReleaseDate, "{0:dd/MM/yyyy}")<br />
+                    @Html.ValidationMessageFor(m => m.ReleaseDate)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.BookGenreId)</td>
+                <td>
+                    @Html.DropDownListFor(m => m.BookGenreId, new SelectList(Model.BookGenres, "Id", "Name"), "Select book genre")<br />
+                    @Html.ValidationMessageFor(m => m.BookGenreId)
+                </td>
+            </tr>
+            <tr>
+                <td>@Html.LabelFor(m => m.NumberInStock)</td>
+                <td>
+                    @Html.TextBoxFor(m => m.NumberInStock)<br />
+                    @Html.ValidationMessageFor(m => m.NumberInStock)
+                </td>
+            </tr>
+        </table>
+        <div>
+            @Html.HiddenFor(m => m.Id)
+            @Html.HiddenFor(m => m.AddedDate)
+            @Html.AntiForgeryToken()
+            <button type="submit" id="butOK" style="margin-top:15px">Save</button>
+        </div>
+    </div>
+}
+@section scripts
+    {
+    @Scripts.Render("~/bundles/jqueryval")
+}

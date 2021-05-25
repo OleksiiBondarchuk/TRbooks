@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
+using System.ComponentModel.DataAnnotations;
 
 namespace Models
 {
-    public class Customer
+    public class CustomerDto
     {
         public int Id { get; set; }
 
@@ -15,13 +15,11 @@ namespace Models
         public string Name { get; set; }
         public bool IsSubscribedToNewsletter { get; set; }
 
+        public MembershipTypeDto MembershipType { get; set; }
 
-        public MembershipType MembershipType { get; set; }
-
-        [Display(Name = "Membership type")]
         public byte MembershipTypeId { get; set; }
 
-        [Min18IfAMemberAttribute]
+        //[Min18IfAMember]
         public DateTime? Birthdate { get; set; }
     }
 }

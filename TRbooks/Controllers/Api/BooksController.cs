@@ -8,6 +8,7 @@ using System.Web.Http;
 using TRbooks.Models;
 using TRbooks.Dtos;
 using AutoMapper;
+using Models;
 
 namespace TRbooks.Controllers.Api
 {

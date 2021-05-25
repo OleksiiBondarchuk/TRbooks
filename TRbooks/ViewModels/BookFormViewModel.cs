@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using TRbooks.Models;
 using System.ComponentModel.DataAnnotations;
+using Models;
 
 namespace TRbooks.ViewModels
 {
@@ -32,7 +33,8 @@ namespace TRbooks.ViewModels
         [Display(Name = "Number in stock")]
         public int NumberInStock { get; set; }
 
-        public string Title {
+        public string Title
+        {
             get
             {
                 return Id != 0 ? "Edit Book" : "New Book";
@@ -42,7 +44,7 @@ namespace TRbooks.ViewModels
         {
             Id = 0;
         }
-        public BookFormViewModel(Book book) 
+        public BookFormViewModel(Book book)
         {
             Id = book.Id;
             Name = book.Name;

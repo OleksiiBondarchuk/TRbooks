@@ -1,20 +1,20 @@
-﻿@model IEnumerable<TRbooks.Models.Book>
+﻿@model IEnumerable<Models.Book>
 @{
     ViewBag.Title = "Random";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 <h2>Our books</h2>
-    <table id="customers" class="dataTable">
-        <thead>
-            <tr>
-                <th>Book</th>
-                <th>Genre</th>
-                <th>Delete</th>
-            </tr>
-        </thead>
-        <tbody>
-        </tbody>
-    </table>
+<table id="customers" class="dataTable">
+    <thead>
+        <tr>
+            <th>Book</th>
+            <th>Genre</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+    </tbody>
+</table>
 
 <button id="butOK">@Html.ActionLink("New Book", "New", "Books")</button>
 @section scripts

@@ -5,6 +5,7 @@ using System.Data.Entity;
 using System.Web.Mvc;
 using TRbooks.Models;
 using TRbooks.ViewModels;
+using Models;
 
 
 namespace TRbooks.Controllers

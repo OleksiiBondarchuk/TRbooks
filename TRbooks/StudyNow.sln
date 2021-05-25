@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudyNow", "StudyNow.csproj", "{F0BD947F-ACC8-4807-8114-E852C8B11036}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "model", "model", "{0F14F0B7-B583-485A-B0CA-E9E3D8F979FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "..\Models\Models.csproj", "{34C6EFA8-5DF5-4D1F-939D-7CAABF16A4F8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,9 +19,16 @@ Global
 		{F0BD947F-ACC8-4807-8114-E852C8B11036}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0BD947F-ACC8-4807-8114-E852C8B11036}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0BD947F-ACC8-4807-8114-E852C8B11036}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34C6EFA8-5DF5-4D1F-939D-7CAABF16A4F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34C6EFA8-5DF5-4D1F-939D-7CAABF16A4F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34C6EFA8-5DF5-4D1F-939D-7CAABF16A4F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34C6EFA8-5DF5-4D1F-939D-7CAABF16A4F8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{34C6EFA8-5DF5-4D1F-939D-7CAABF16A4F8} = {0F14F0B7-B583-485A-B0CA-E9E3D8F979FD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {51C69FCC-EFC5-41E4-8CDB-A8980F4264C5}

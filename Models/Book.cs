@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Web;
-using TRbooks.ViewModels;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace TRbooks.Models
+namespace Models
 {
     public class Book
     {

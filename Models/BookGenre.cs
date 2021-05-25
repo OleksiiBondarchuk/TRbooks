@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace TRbooks.Models
+namespace Models
 {
+
     public class BookGenre
     {
         public int Id { get; set; }
@@ -13,4 +15,5 @@ namespace TRbooks.Models
         [Required]
         public string Name { get; set; }
     }
+
 }

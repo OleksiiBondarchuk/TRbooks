@@ -15,13 +15,13 @@ namespace TRbooks.Models
         public string Name { get; set; }
         public bool IsSubscribedToNewsletter { get; set; }
 
-       
+
         public MembershipType MembershipType { get; set; }
 
         [Display(Name = "Membership type")]
         public byte MembershipTypeId { get; set; }
 
-        [Min18IfAMember ]
+        [Min18IfAMemberAttribute]
         public DateTime? Birthdate { get; set; }
     }
 }

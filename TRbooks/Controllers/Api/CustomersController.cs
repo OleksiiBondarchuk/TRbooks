@@ -6,6 +6,7 @@ using System.Net.Http;
 using System.Data.Entity;
 using System.Web.Http;
 using TRbooks.Models;
+using Models;
 using TRbooks.Dtos;
 using AutoMapper;
 
@@ -36,7 +37,7 @@ namespace TRbooks.Controllers.Api
             if (customer == null)
                 NotFound();
 
-            return Ok(Mapper.Map<Customer,CustomerDto>(customer));
+            return Ok(Mapper.Map<Customer, CustomerDto>(customer));
         }
 
         //Post /api/customers
@@ -53,7 +54,7 @@ namespace TRbooks.Controllers.Api
 
             customerDto.Id = customer.Id;
 
-            return Created(new Uri(Request.RequestUri + "/" + customer.Id ), customerDto);
+            return Created(new Uri(Request.RequestUri + "/" + customer.Id), customerDto);
         }
 
         //Put /api/customers/1
@@ -67,8 +68,8 @@ namespace TRbooks.Controllers.Api
             if (customerInDb == null)
                 return NotFound();
 
-            Mapper.Map(customerDto,customerInDb);
-            
+            Mapper.Map(customerDto, customerInDb);
+
             context.SaveChanges();
 
             return Ok();

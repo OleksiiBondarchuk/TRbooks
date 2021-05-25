@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using TRbooks.Models;
+using Models;
 using TRbooks.Dtos;
 
 namespace TRbooks.Controllers

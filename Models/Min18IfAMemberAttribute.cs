@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace TRbooks.Models
+namespace Models
 {
     public class Min18IfAMemberAttribute : ValidationAttribute
     {

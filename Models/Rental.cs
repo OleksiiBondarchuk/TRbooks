@@ -3,10 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
-using TRbooks.Migrations;
 using Models;
 
-namespace TRbooks.Models
+namespace Models
 {
     public class Rental
     {

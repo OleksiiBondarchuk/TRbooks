@@ -278,7 +278,6 @@
     <Compile Include="Models\ApplicationDbContext.cs" />
     <Compile Include="Models\ExternalLoginConfirmationViewModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
-    <Compile Include="Models\Rental.cs" />
     <Compile Include="Models\RoleName.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />

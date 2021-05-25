@@ -1,4 +1,4 @@
-﻿@model TRbooks.Models.Customer
+﻿@model Models.Customer
 @{
     ViewBag.Title = "Details";
 }
@@ -8,7 +8,7 @@
     <li>
         @Model.MembershipType.Name
     </li>
-    @if (Model.Birthdate != null) 
+    @if (Model.Birthdate != null)
     {
         <li>@Model.Birthdate.Value.ToShortDateString()</li>
     }

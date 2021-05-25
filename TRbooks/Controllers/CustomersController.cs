@@ -5,16 +5,17 @@ using System.Data.Entity.Core.Metadata.Edm;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Models;
 using TRbooks.Models;
 using TRbooks.ViewModels;
 
 namespace TRbooks.Controllers
 {
-    
+
     public class CustomersController : Controller
     {
         ApplicationDbContext context;
-        public CustomersController() 
+        public CustomersController()
         {
             context = new ApplicationDbContext();
         }
@@ -23,7 +24,7 @@ namespace TRbooks.Controllers
             context.Dispose();
         }
 
-        
+
         public ActionResult Index()
         {
             return View();
@@ -40,7 +41,7 @@ namespace TRbooks.Controllers
             return View(customer);
         }
 
-        public ActionResult New() 
+        public ActionResult New()
         {
             var membersipTypes = context.MembershipTypes.ToList();
             var viewModel = new CustomerFormViewModel
@@ -48,14 +49,14 @@ namespace TRbooks.Controllers
                 Customer = new Customer(),
                 MembershipTypes = membersipTypes
             };
-            return View("CustomerForm",viewModel);
+            return View("CustomerForm", viewModel);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Save(Customer customer) 
+        public ActionResult Save(Customer customer)
         {
-            if (!ModelState.IsValid) 
+            if (!ModelState.IsValid)
             {
                 var viewModel = new CustomerFormViewModel
                 {
@@ -66,22 +67,22 @@ namespace TRbooks.Controllers
             }
             if (customer.Id == 0)
                 context.Customers.Add(customer);
-            else 
+            else
             {
                 var customerInDB = context.Customers.Single(c => c.Id == customer.Id);
                 customerInDB.Name = customer.Name;
                 customerInDB.Birthdate = customer.Birthdate;
                 customerInDB.MembershipTypeId = customer.MembershipTypeId;
-                customerInDB.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;  
+                customerInDB.IsSubscribedToNewsletter = customer.IsSubscribedToNewsletter;
             }
-            
+
             context.SaveChanges();
 
-            return RedirectToAction("Index","Customers");
+            return RedirectToAction("Index", "Customers");
         }
         public ActionResult Edit(int id)
         {
-            var customer = context.Customers.SingleOrDefault(c => id  == c.Id);
+            var customer = context.Customers.SingleOrDefault(c => id == c.Id);
             if (customer == null)
                 return HttpNotFound();
             var viewModel = new CustomerFormViewModel
@@ -90,7 +91,7 @@ namespace TRbooks.Controllers
                 MembershipTypes = context.MembershipTypes.ToList()
             };
 
-            return View("CustomerForm",viewModel);
+            return View("CustomerForm", viewModel);
         }
     }
 }
